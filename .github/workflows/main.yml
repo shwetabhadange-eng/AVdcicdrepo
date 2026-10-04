@@ -1,7 +1,7 @@
 #pipeline name/workflow name
 name: First workflow
 
-On:
+on:
     push:
         branches:
                 -main
