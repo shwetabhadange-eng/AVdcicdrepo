@@ -1,20 +1,23 @@
-#pipeline name/workflow
-
-name:First workflow
+#pipeline name/workflow name
+name: First workflow
 
 On:
+    push:
+        branches:
+                -main
+
 
   jobs:
       print-message:
-        runs-on:ubuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
           
-            -name:print welcome message
+            -name: print welcome message
             run: echo'welcome to github action'
 
             
             -name: print hello message
-              run:echo 'hello....'
+            run: echo 'hello....'
 
 
