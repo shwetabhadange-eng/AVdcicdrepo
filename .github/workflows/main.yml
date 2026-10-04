@@ -7,7 +7,7 @@ On:
                 -main
 
 
-  jobs:
+jobs:
       print-message:
         runs-on: ubuntu-latest
 
